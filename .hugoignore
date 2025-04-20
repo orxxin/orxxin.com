@@ -1,0 +1,11 @@
+# Ignore unused Hugo dirs
+^data/
+^i18n/
+
+# Ignore editor junk
+^\.DS_Store$
+^Thumbs\.db$
+
+# Ignore experimental or local-only folders (optional)
+^drafts/
+^sandbox/

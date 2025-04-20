@@ -1,0 +1,116 @@
+# ======================================
+# Hugo-Specific
+# ======================================
+
+# Hugo's generated site content
+/public/
+/resources/
+/hugo_stats.json
+
+# Cache and build artifacts
+/.hugo_build.lock
+
+# ======================================
+# macOS-Specific
+# ======================================
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Spotlight and Finder
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# ======================================
+# VS Code-Specific
+# ======================================
+
+.vscode/
+*.code-workspace
+
+# VS Code extensions or test results
+.history/
+*.log
+
+# ======================================
+# Node / npm / yarn (if using Hugo with JS tools)
+# ======================================
+
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# Optional: ignore frontend build files if they're compiled
+/dist/
+/build/
+
+# ======================================
+# SASS / PostCSS (if applicable)
+/*.css.map
+*.scssc
+
+# ======================================
+# Security Best Practices
+# ======================================
+
+# Secrets / sensitive files (DO NOT TRACK THESE)
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.enc
+*.p12
+*.pfx
+*.jks
+secrets.*.json
+*.sqlite
+*.db
+
+# Git credentials or auth tokens (if mistakenly generated)
+*.git-credentials
+auth.json
+
+# Prevent accidental publishing of personal data
+*.csv
+*.xlsx
+*.xls
+*.json
+*.xml
+
+# ======================================
+# Miscellaneous
+# ======================================
+
+# Archives and backups
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Logs and system crash reports
+*.log
+*.pid
+*.seed
+
+# Ignore IDE metadata
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# Temporary folders
+tmp/
+temp/
+.cache/

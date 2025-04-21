@@ -82,6 +82,19 @@ body {
   display: unset !important;
 }
 
+.orxxin-logo {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+.orxxin-logo path {
+  transition: fill 0.3s ease-in-out;
+}
+
+.logo:hover .orxxin-logo path:first-child {
+  fill: var(--glitch-cyan); /* or burn-magenta for glitch pulse */
+}
+
 /* 4. Typography + Content */
 h1, h2, h3, h4, h5, h6 {
   color: var(--signal-white);
@@ -333,6 +346,20 @@ th {
     bootFade 2s ease-out forwards,
     crtFlicker 4s infinite ease-in-out 1s;
   transform-origin: center;
+}
+
+.preview-banner {
+  background-color: var(--burn-magenta);
+  color: var(--signal-white);
+  text-align: center;
+  padding: 0.75rem 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  border-bottom: 2px solid var(--glitch-cyan);
+  z-index: 1000;
+  position: relative;
+  animation: crtFlicker 3s infinite;
 }
 
 /* 11. Home info override */

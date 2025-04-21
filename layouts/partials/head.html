@@ -97,13 +97,13 @@
 {{- partial "extend_head.html" . -}}
 
 {{- /* Misc */}}
-{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
-<script async defer
-  data-website-id="593638aa-e7f8-4eef-8026-65578af5c2b0"
-  src="/js/signal.js"
-  integrity="sha384-SFsMpKRCyYk5EyksaI8vYDNAymffPp0kdzSmi+PBrY1qJVQWCU9zTosi+rDgmeiz"
-  crossorigin="anonymous">
-</script>
+{{ if eq hugo.Environment "production" }}
+  <script async defer
+    data-website-id="593638aa-e7f8-4eef-8026-65578af5c2b0"
+    src="https://pulse.orxxin.com/script.js"
+    integrity="sha384-SFsMpKRCyYk5EyksaI8vYDNAymffPp0kdzSmi+PBrY1qJVQWCU9zTosi+rDgmeiz"
+    crossorigin="anonymous">
+  </script>
 {{- partial "templates/opengraph.html" . }}
 {{- partial "templates/twitter_cards.html" . }}
 {{- partial "templates/schema_json.html" . }}

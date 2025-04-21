@@ -74,6 +74,7 @@ params:
   disableScrollToTop: true
   ShowCodeCopyButtons: false
   ShowShareButtons: false
+  DateFormat: "02 Jan 2006 at 15:04 UTC"
   assets:
     disableScrollBarStyle: true
     customCSS:
@@ -134,13 +135,6 @@ imaging:
   anchor: "smart"
   resampleFilter: "Lanczos"
 
-# Deployment targets (optional)
-deployment:
-  targets:
-    - name: production
-      URL: "s3://your-s3-bucket"
-      cloudFrontDistributionID: "YOUR_CF_DIST_ID"
-
 # Caching
 caches:
   getjson:
@@ -149,12 +143,6 @@ caches:
   images:
     dir: ":resourceDir/images"
     maxAge: "720h"
-
-# Outputs
-outputs:
-  home: ["HTML", "RSS", "JSON"]
-  page: ["HTML"]
-  section: ["HTML", "RSS"]
 
 # Languages (extend for i18n)
 languages:
@@ -165,12 +153,27 @@ languages:
     contentDir: "content/en"
 
 # Optional PWA or manifest config
-outputsFormats:
+mediaTypes:
+  text/netlify:
+    suffixes: ["headers"]
+
+outputFormats:
   JSON:
     mediatype: "application/json"
     baseName: "index"
     isPlainText: false
     notAlternative: true
+  headers:
+    mediaType: "text/netlify"
+    baseName: "_headers"
+    isPlainText: true
+    notAlternative: true
+
+# Outputs
+outputs:
+  home: ["HTML", "RSS", "JSON", "headers"]
+  page: ["HTML"]
+  section: ["HTML", "RSS"]
 
 # Custom menus
 menu:

@@ -1,8 +1,8 @@
 ---
 title: 'learning how systems fall apart'
-date: '2025-04-09T20:15:33+04:00'
-lastmod: '2025-04-09T20:15:33+04:00'
-publishDate: '2025-04-09T20:15:33+04:00'
+date: '2025-04-21T14:54:00+00:00'
+lastmod: '2025-04-21T14:54:00+00:00'
+publishDate: '2025-04-21T14:54:00+00:00'
 draft: false
 
 # SEO & Snippets

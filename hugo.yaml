@@ -155,7 +155,7 @@ languages:
 # Optional PWA or manifest config
 mediaTypes:
   text/netlify:
-    suffixes: ["headers"]
+    suffixes: ""
 
 outputFormats:
   JSON:

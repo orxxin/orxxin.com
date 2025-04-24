@@ -66,6 +66,7 @@ sitemap:
 
 params:
   author: "or//in"
+  titleHome: "or//in | execution begins here"
   description: "learning how systems fall apart."
   keywords: ["or//in", "orxxin", "bug bounty", "recon", "infosec", "penetration testing"]
   socialImage: "/images/orxxin-logo.png"
@@ -74,7 +75,10 @@ params:
   disableScrollToTop: true
   ShowCodeCopyButtons: false
   ShowShareButtons: false
+  images: ["/images/orxxin-logo.png"]
   DateFormat: "02 Jan 2006 at 15:04 UTC"
+  schema:
+    publisherType: "Person"
   assets:
     disableScrollBarStyle: true
     customCSS:

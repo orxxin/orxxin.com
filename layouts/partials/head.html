@@ -8,7 +8,13 @@
 {{- end }}
 
 {{- /* Title */}}
-<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
+{{- if .IsHome }}
+<title>{{ .Param "titleHome" }}</title>
+{{- else }}
+{{ if .Title }}
+<title>{{ .Title }} | {{ site.Title }}</title>
+{{- end }}
+{{- end }}
 
 {{- /* Meta */}}
 {{- if .IsHome }}
@@ -82,7 +88,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{ site.Params.assets.favicon16x16 | default "favicon-16x16.png" | absURL }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ site.Params.assets.favicon32x32 | default "favicon-32x32.png" | absURL }}">
 <link rel="apple-touch-icon" href="{{ site.Params.assets.apple_touch_icon | default "apple-touch-icon.png" | absURL }}">
-<link rel="mask-icon" href="{{ site.Params.assets.safari_pinned_tab | default "safari-pinned-tab.svg" | absURL }}">
+<link rel="mask-icon" href="{{ site.Params.assets.safari_pinned_tab | default "safari-pinned-tab.svg" | absURL }}" color="#00FFE0">
 <meta name="theme-color" content="{{ site.Params.assets.theme_color | default "#0A0A0A" }}">
 <meta name="msapplication-TileColor" content="{{ site.Params.assets.msapplication_TileColor | default "#0A0A0A" }}">
 

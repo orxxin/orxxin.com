@@ -1,5 +1,5 @@
 ---
-title: 'signal entry'
+title: 'send intent. trace signal.'
 date: '2025-04-21T14:54:00+00:00'
 lastmod: '2025-04-21T14:54:00+00:00'
 publishDate: '2025-04-21T14:54:00+00:00'
@@ -12,7 +12,7 @@ summary: 'no mailers. no noise. just an open port for quiet contact.'
 slug: 'contact'
 url: '/contact/'
 aliases: ['/signal', '/reach', '/connect']
-keywords: ['contact', 'signal', 'reach out', 'orxxin', 'infosec', 'bug bounty']
+keywords: ['contact', 'signal', 'reach out', 'orxxin', 'or//in', 'infosec', 'bug bounty']
 canonicalURL: 'https://orxxin.com/contact/'
 robots: 'index, follow'
 

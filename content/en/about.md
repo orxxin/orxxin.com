@@ -1,5 +1,5 @@
 ---
-title: 'about'
+title: 'not a user. a process.'
 date: '2025-04-21T14:54:00+00:00'
 lastmod: '2025-04-21T14:54:00+00:00'
 publishDate: '2025-04-21T14:54:00+00:00'
